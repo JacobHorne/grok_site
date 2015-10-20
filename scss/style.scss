@@ -20,7 +20,7 @@ ul.countdown li {
 display: inline-block;
 }
 ul.countdown li span {
-font-size: 30px;
+font-size: 1.4em;
 font-weight: 600;
 line-height: 30px;
 }
@@ -52,9 +52,11 @@ p{
     line-height: 1.6em;
 }
 article{
-    font-family: "Lora" italic;
-    font-size: 1em;
+    font-family: "Lora" serif;
+    font-size: .9em;
     line-height: 1.6em;
+    font-style: italic;
+
 }
 img{
     display:block;
@@ -348,6 +350,7 @@ ul{
             float:left;
             margin-left:2%;
             border-right:1px solid $verylgrey;
+            border-bottom:none;
         }
         div:last-child{
             border:none;
