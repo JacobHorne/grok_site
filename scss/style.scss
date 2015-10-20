@@ -1,0 +1,200 @@
+
+$hotgreen:#15da1a;
+$purple:#5b3d97;
+$darkerpurple:#543b85;
+$violet:#a82e9b;
+$darkerviolet:#943089;
+$textgrey:#333333;
+$lgrey:#636060;
+$white:#eae9ec;
+
+ul.countdown {
+list-style: none;
+margin: 75px 0;
+padding: 0;
+display: block;
+text-align: center;
+}
+ul.countdown li {
+display: inline-block;
+}
+ul.countdown li span {
+font-size: 30px;
+font-weight: 600;
+line-height: 30px;
+}
+ul.countdown li.seperator {
+font-size: 30px;
+line-height: 30px;
+vertical-align: top;
+}
+ul.countdown li p {
+color: $white;
+font-size: 14px;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    color:$textgrey;
+}
+h1,h2,h3,h4,h5{
+    text-transform: uppercase;
+    padding:0;
+    margin:0;
+}
+p{
+    font-family: "Lora";
+}
+article{
+    font-family: "Lora";
+}
+img{
+    display:block;
+    padding:0;
+    margin:0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+
+.clearfix {
+    zoom: 1;
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+/***** SITE STYLES *************/
+/**********************************/
+.main_header{
+	background-image: url("../img/nightsky.jpg");
+	background-size:cover;
+	background-position: center center;
+	height:800px;
+    color:$white;
+    img{
+        padding-top:50px;
+        width:250px;
+        margin: 0 auto;
+    }
+    h1{
+        text-transform: none;
+        text-align: center;
+        font-weight: 600;  
+    }
+    h2{
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.2em;
+    }
+    a{
+        text-align: center;
+        color:$hotgreen;
+        font-size:1em;
+        width: 280px;
+        margin:0 auto;        
+    }
+
+}
+
+.button{
+    border: 5px solid $hotgreen;
+    padding: 5px 35px 5px 35px;
+    margin:0 auto;
+    &:hover{
+            color:$white;
+            background-color:$hotgreen;
+            transition: 0.3s ease;
+        }
+}
+
+.grok{
+    padding:20px;
+    img{
+        display:none;
+    }
+}
+
+.ten_twenty{
+    padding:20px;
+    background-color:$purple;
+    color:$white;
+    img{
+        display:none;
+    }
+}
+
+.speakers{
+    padding:20px;
+    img{
+        border-radius: 200px 200px 200px 200px;
+    }
+}
+.special_performance{
+    padding:20px;
+    color:$white;
+    background-color:$violet; 
+}
+
+.schedule{
+    padding:20px;
+
+}
+.itenerary{
+    padding:20px;
+
+}
+.register{
+    padding:20px;
+    background-image: url("../img/mars.png");
+    background-size:cover;
+    background-position: center center;
+    height:200px;
+    color:$white;
+    h1{
+        text-align:center;
+    }
+    a{
+        color:$hotgreen;
+    }
+}
+
+.sponsors{
+    padding:20px;
+    img{
+        max-width: 200px;
+    }
+}
+.presentation{
+    padding:20px;
+    background-color:$textgrey;
+    img{
+        margin-bottom:40px;
+        max-width: 300px;
+    }
+}
+.footer{
+    padding:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

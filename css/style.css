@@ -1,0 +1,228 @@
+/* line 11, ../scss/style.scss */
+ul.countdown {
+  list-style: none;
+  margin: 75px 0;
+  padding: 0;
+  display: block;
+  text-align: center;
+}
+
+/* line 18, ../scss/style.scss */
+ul.countdown li {
+  display: inline-block;
+}
+
+/* line 21, ../scss/style.scss */
+ul.countdown li span {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+/* line 26, ../scss/style.scss */
+ul.countdown li.seperator {
+  font-size: 30px;
+  line-height: 30px;
+  vertical-align: top;
+}
+
+/* line 31, ../scss/style.scss */
+ul.countdown li p {
+  color: #eae9ec;
+  font-size: 14px;
+}
+
+/* line 36, ../scss/style.scss */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+}
+
+/* line 40, ../scss/style.scss */
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 45, ../scss/style.scss */
+p {
+  font-family: "Lora";
+}
+
+/* line 48, ../scss/style.scss */
+article {
+  font-family: "Lora";
+}
+
+/* line 51, ../scss/style.scss */
+img {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 56, ../scss/style.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 59, ../scss/style.scss */
+ul {
+  list-style: none;
+}
+
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+/* line 65, ../scss/style.scss */
+.clearfix {
+  zoom: 1;
+}
+/* line 67, ../scss/style.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 71, ../scss/style.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/***** SITE STYLES *************/
+/**********************************/
+/* line 78, ../scss/style.scss */
+.main_header {
+  background-image: url("../img/nightsky.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 800px;
+  color: #eae9ec;
+}
+/* line 84, ../scss/style.scss */
+.main_header img {
+  padding-top: 50px;
+  width: 250px;
+  margin: 0 auto;
+}
+/* line 89, ../scss/style.scss */
+.main_header h1 {
+  text-transform: none;
+  text-align: center;
+  font-weight: 600;
+}
+/* line 94, ../scss/style.scss */
+.main_header h2 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+/* line 99, ../scss/style.scss */
+.main_header a {
+  text-align: center;
+  color: #15da1a;
+  font-size: 1em;
+  width: 280px;
+  margin: 0 auto;
+}
+
+/* line 109, ../scss/style.scss */
+.button {
+  border: 5px solid #15da1a;
+  padding: 5px 35px 5px 35px;
+  margin: 0 auto;
+}
+/* line 113, ../scss/style.scss */
+.button:hover {
+  color: #eae9ec;
+  background-color: #15da1a;
+  transition: 0.3s ease;
+}
+
+/* line 120, ../scss/style.scss */
+.grok {
+  padding: 20px;
+}
+/* line 122, ../scss/style.scss */
+.grok img {
+  display: none;
+}
+
+/* line 127, ../scss/style.scss */
+.ten_twenty {
+  padding: 20px;
+  background-color: #5b3d97;
+  color: #eae9ec;
+}
+/* line 131, ../scss/style.scss */
+.ten_twenty img {
+  display: none;
+}
+
+/* line 136, ../scss/style.scss */
+.speakers {
+  padding: 20px;
+}
+/* line 138, ../scss/style.scss */
+.speakers img {
+  border-radius: 200px 200px 200px 200px;
+}
+
+/* line 142, ../scss/style.scss */
+.special_performance {
+  padding: 20px;
+  color: #eae9ec;
+  background-color: #a82e9b;
+}
+
+/* line 148, ../scss/style.scss */
+.schedule {
+  padding: 20px;
+}
+
+/* line 152, ../scss/style.scss */
+.itenerary {
+  padding: 20px;
+}
+
+/* line 156, ../scss/style.scss */
+.register {
+  padding: 20px;
+  background-image: url("../img/mars.png");
+  background-size: cover;
+  background-position: center center;
+  height: 200px;
+  color: #eae9ec;
+}
+/* line 163, ../scss/style.scss */
+.register h1 {
+  text-align: center;
+}
+/* line 166, ../scss/style.scss */
+.register a {
+  color: #15da1a;
+}
+
+/* line 171, ../scss/style.scss */
+.sponsors {
+  padding: 20px;
+}
+/* line 173, ../scss/style.scss */
+.sponsors img {
+  max-width: 200px;
+}
+
+/* line 177, ../scss/style.scss */
+.presentation {
+  padding: 20px;
+  background-color: #333333;
+}
+/* line 180, ../scss/style.scss */
+.presentation img {
+  margin-bottom: 40px;
+  max-width: 300px;
+}
+
+/* line 185, ../scss/style.scss */
+.footer {
+  padding: 20px;
+}
