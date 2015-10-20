@@ -10,7 +10,7 @@ $white:#eae9ec;
 
 ul.countdown {
 list-style: none;
-margin: 75px 0;
+margin: 30px 0;
 padding: 0;
 display: block;
 text-align: center;
@@ -30,7 +30,8 @@ vertical-align: top;
 }
 ul.countdown li p {
 color: $white;
-font-size: 14px;
+font-size: 1em;
+font-family: "Open Sans";
 }
 
 body{
@@ -42,11 +43,17 @@ h1,h2,h3,h4,h5{
     padding:0;
     margin:0;
 }
+h1{
+    font-size: 2.7em;
+}
 p{
     font-family: "Lora";
+    line-height: 1.6em;
 }
 article{
-    font-family: "Lora";
+    font-family: "Lora" italic;
+    font-size: 1em;
+    line-height: 1.6em;
 }
 img{
     display:block;
@@ -58,6 +65,8 @@ a{
 }
 ul{
     list-style: none;
+    padding:none;
+    margin: none;
 }
 /***** CLEARFIX is applied to the parent of floated elements *************/
 /*************************************************************************/
@@ -82,34 +91,36 @@ ul{
 	height:800px;
     color:$white;
     img{
-        padding-top:50px;
-        width:250px;
+        padding-top:100px;
         margin: 0 auto;
     }
     h1{
         text-transform: none;
         text-align: center;
-        font-weight: 600;  
+        font-size: 2em;
+        font-weight: 700;  
     }
     h2{
         text-align: center;
         font-weight: 300;
-        font-size: 1.2em;
+        font-size: 1em;
+        margin-bottom: 10px;
     }
     a{
+        display:block;
         text-align: center;
         color:$hotgreen;
         font-size:1em;
-        width: 280px;
-        margin:0 auto;        
+        margin:0 auto; 
+        width: 220px;      
     }
 
 }
 
 .button{
     border: 5px solid $hotgreen;
-    padding: 5px 35px 5px 35px;
-    margin:0 auto;
+    padding:5px; 
+    text-align: center;
     &:hover{
             color:$white;
             background-color:$hotgreen;
@@ -121,6 +132,9 @@ ul{
     padding:20px;
     img{
         display:none;
+    }
+    h1{
+        padding-top: 20px;
     }
 }
 
@@ -134,19 +148,62 @@ ul{
 }
 
 .speakers{
+    margin:20px 0 20px 0px;
     padding:20px;
     img{
+        width:50%;
+        max-width: 250px;
         border-radius: 200px 200px 200px 200px;
+        border: 8px solid black;
+        margin:20px 0 20px 0px;
+    }
+    h3{
+        color:$purple;
+    }
+    h4{
+        color:$violet;
+        margin-bottom: 10px;
     }
 }
 .special_performance{
-    padding:20px;
+    padding:30px 20px 30px 20px;
     color:$white;
     background-color:$violet; 
+    img{
+        width:50%;
+        max-width: 250px;
+        border-radius: 200px 200px 200px 200px;
+        border: 8px solid white;
+        margin:20px 20px 20px 0;
+    }
+    h4{
+        margin-bottom: 10px;
+    }
 }
 
 .schedule{
+    margin-top: 20px;
     padding:20px;
+    h1{
+        padding-bottom:10px;
+    }
+    h2{
+        padding-bottom:10px;
+    }
+    h3{
+        font-weight: 300;
+        font-family: "Lora";
+        text-transform: none;
+        padding-bottom:10px;
+    }
+    h4{
+        font-weight: 300;
+        font-family: "Lora";
+        text-transform: none;
+    }
+    h5{
+        color:$violet;
+    }
 
 }
 .itenerary{
@@ -162,32 +219,156 @@ ul{
     color:$white;
     h1{
         text-align:center;
+        font-size: 1.5em;
+        margin-bottom: 20px;
     }
     a{
+        display:block;
+        margin:0 auto;
         color:$hotgreen;
+        width:200px;
     }
 }
 
 .sponsors{
     padding:20px;
     img{
+        padding:40px;
         max-width: 200px;
     }
 }
 .presentation{
     padding:20px;
     background-color:$textgrey;
+    color:$white;
     img{
-        margin-bottom:40px;
-        max-width: 300px;
+        padding:40px;
+        max-width: 200px;
+        margin:0 auto;
     }
 }
 .footer{
     padding:20px;
+    background-color:$lgrey;
+    a{
+        color:$white;
+        &:visited{
+            color:$white;
+        }
+    }
+    .grokhead{
+        width:20%;
+        margin: 0 auto;
+    }
+    .social{
+        a{
+            display:inline-block;
+        }
+    }
+
+}
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+@media screen and (min-width: 660px){
+    .grok{
+        div{
+        width:58%;
+        float:left;
+        }
+        img{
+        display:block;
+        max-width: 320px;
+        width:40%;
+        float:left;
+        margin:0 auto;
+        }
+    }
+    .ten_twenty{
+        img{
+            display:block;
+            width:45%;
+            max-width: 200px;
+            float:left;
+            padding:40px;
+        }
+        div{
+            width: 54%;
+            float:left;
+        }  
+    }
+    .speakers{
+
+    }
+    .special_performance{
+        img{
+            width:30%;
+            max-width: 280px;
+            float:left;
+        }
+        div{
+            width:65%;
+            float:left;
+        }
+    }
+    .schedule{
+
+    }
+    .itenerary{
+        div{
+            width: 29%;
+            float:left;
+            margin-left:2%;
+        }
+    }
+    .sponsors{
+        div{
+            width:47%;
+            float:left
+        }
+        img{
+            width: 80%;
+            max-width: 250px;
+        }
+    }
+    .presentation{
+        a{
+            display: block;
+            width:47%;
+            float:left
+        }
+        img{
+            width:80%;
+            max-width: 400px;
+        }
+    }
+
 }
 
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
 
-
+@media screen and (min-width: 900px){
+    .speakers{
+        div{
+        width:29%;
+        margin-left:3%;
+        float:left;
+        }
+        img{
+            width:75%;
+            max-width:260px;
+        }
+    }
+}
 
 
 
