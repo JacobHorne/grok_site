@@ -276,7 +276,7 @@ ul {
 .register h1 {
   text-align: center;
   font-size: 1.8em;
-  margin-bottom: 20px;
+  margin: 40px 0 20px 0;
 }
 /* line 234, ../scss/style.scss */
 .register a {
@@ -317,35 +317,47 @@ ul {
 /* line 262, ../scss/style.scss */
 .footer a {
   color: #eae9ec;
+  opacity: .8;
 }
-/* line 264, ../scss/style.scss */
+/* line 265, ../scss/style.scss */
 .footer a:visited {
   color: #eae9ec;
 }
-/* line 269, ../scss/style.scss */
-.footer .grokhead img {
+/* line 268, ../scss/style.scss */
+.footer a:hover {
+  opacity: 1;
+}
+
+/* line 274, ../scss/style.scss */
+.grokhead img {
   width: 80px;
   margin: 0 auto;
   margin-bottom: 15px;
 }
-/* line 275, ../scss/style.scss */
-.footer .social {
+
+/* line 280, ../scss/style.scss */
+.social {
   text-align: center;
 }
-/* line 277, ../scss/style.scss */
-.footer .social img {
+/* line 282, ../scss/style.scss */
+.social img {
   width: 40px;
   display: inline-block;
   margin-bottom: 15px;
 }
 
+/* line 288, ../scss/style.scss */
+.fadein {
+  background: green;
+}
+
 @media screen and (min-width: 600px) {
-  /* line 294, ../scss/style.scss */
+  /* line 301, ../scss/style.scss */
   .grok div {
     width: 58%;
     float: left;
   }
-  /* line 298, ../scss/style.scss */
+  /* line 305, ../scss/style.scss */
   .grok img {
     display: block;
     max-width: 320px;
@@ -354,7 +366,7 @@ ul {
     margin: 0 auto;
   }
 
-  /* line 307, ../scss/style.scss */
+  /* line 314, ../scss/style.scss */
   .ten_twenty img {
     display: block;
     width: 45%;
@@ -362,89 +374,89 @@ ul {
     float: left;
     padding: 40px;
   }
-  /* line 314, ../scss/style.scss */
+  /* line 321, ../scss/style.scss */
   .ten_twenty div {
     width: 50%;
     float: left;
   }
 
-  /* line 320, ../scss/style.scss */
+  /* line 327, ../scss/style.scss */
   .special_performance img {
     width: 30%;
     max-width: 280px;
     float: left;
   }
-  /* line 325, ../scss/style.scss */
+  /* line 332, ../scss/style.scss */
   .special_performance div {
     width: 60%;
     float: left;
   }
 
-  /* line 331, ../scss/style.scss */
+  /* line 338, ../scss/style.scss */
   .schedule h4 {
     width: 45%;
     float: left;
   }
 
-  /* line 336, ../scss/style.scss */
+  /* line 343, ../scss/style.scss */
   .itenerary {
     border: double 6px #333333;
     margin: 100px 0 100px 0;
   }
-  /* line 339, ../scss/style.scss */
+  /* line 346, ../scss/style.scss */
   .itenerary div {
     width: 29%;
     float: left;
     margin-left: 2%;
     border-right: 1px solid #e8e8e8;
   }
-  /* line 345, ../scss/style.scss */
+  /* line 352, ../scss/style.scss */
   .itenerary div:last-child {
     border: none;
   }
 
-  /* line 349, ../scss/style.scss */
+  /* line 356, ../scss/style.scss */
   .sponsors {
     margin-left: 4%;
   }
-  /* line 351, ../scss/style.scss */
+  /* line 358, ../scss/style.scss */
   .sponsors div {
     width: 45%;
     float: left;
   }
-  /* line 355, ../scss/style.scss */
+  /* line 362, ../scss/style.scss */
   .sponsors img {
     width: 80%;
     max-width: 250px;
   }
 
-  /* line 361, ../scss/style.scss */
+  /* line 368, ../scss/style.scss */
   .presentation a {
     display: block;
     width: 47%;
     float: left;
   }
-  /* line 366, ../scss/style.scss */
+  /* line 373, ../scss/style.scss */
   .presentation img {
     width: 80%;
     max-width: 400px;
   }
-  /* line 370, ../scss/style.scss */
+  /* line 377, ../scss/style.scss */
   .presentation .ums {
     padding-top: 75px;
   }
 
-  /* line 374, ../scss/style.scss */
+  /* line 381, ../scss/style.scss */
   .footer {
     text-align: center;
   }
-  /* line 376, ../scss/style.scss */
+  /* line 383, ../scss/style.scss */
   .footer ul {
     display: block;
     width: 95%;
     margin: 0 auto;
   }
-  /* line 381, ../scss/style.scss */
+  /* line 388, ../scss/style.scss */
   .footer li {
     display: inline-block;
     margin-left: 2%;
@@ -452,13 +464,13 @@ ul {
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 399, ../scss/style.scss */
+  /* line 406, ../scss/style.scss */
   .speakers div {
     width: 29%;
     margin-left: 3%;
     float: left;
   }
-  /* line 404, ../scss/style.scss */
+  /* line 411, ../scss/style.scss */
   .speakers img {
     width: 75%;
     max-width: 260px;

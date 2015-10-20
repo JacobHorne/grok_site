@@ -6,7 +6,7 @@
 	$( function(){
 
 		var hasAnimatedIn = false;
-		var speakers = $( ".speakers" );
+		var speakers = $( ".speakers img" );
 		var win = $( window );
 		var offset;
 		var top;
@@ -19,7 +19,7 @@
 		} );
 
 
-		//speakers.css( "opacity", 0.01 );
+		speakers.css( "opacity", 0.05 );
 
 		win.scroll( function() {
 
@@ -31,8 +31,8 @@
 
 		    	console.log("hello");
 		    	hasAnimatedIn = true;
-		       // speakers.animate( { "opacity" : 1 }, 1000 );
-		       $(speakers).addClass(".fadein");
+		        speakers.animate( { "opacity" : 1 }, 1100 );
+		       	//$(speakers).addClass(".fadein");
 
 		    }
 		});
