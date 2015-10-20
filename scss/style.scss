@@ -6,6 +6,7 @@ $violet:#a82e9b;
 $darkerviolet:#943089;
 $textgrey:#333333;
 $lgrey:#636060;
+$verylgrey:#e8e8e8;
 $white:#eae9ec;
 
 ul.countdown {
@@ -65,8 +66,8 @@ a{
 }
 ul{
     list-style: none;
-    padding:none;
-    margin: none;
+    padding:0;
+    margin: 0;
 }
 /***** CLEARFIX is applied to the parent of floated elements *************/
 /*************************************************************************/
@@ -208,6 +209,14 @@ ul{
 }
 .itenerary{
     padding:20px;
+    margin:50px 0 30px 0;
+    div{
+        margin-bottom:30px;
+        border-bottom:1px solid $verylgrey;
+    }
+    div:last-child{
+        border:none;
+    }
 
 }
 .register{
@@ -219,7 +228,7 @@ ul{
     color:$white;
     h1{
         text-align:center;
-        font-size: 1.5em;
+        font-size: 1.8em;
         margin-bottom: 20px;
     }
     a{
@@ -248,8 +257,8 @@ ul{
     }
 }
 .footer{
-    padding:20px;
     background-color:$lgrey;
+    padding:20px;
     a{
         color:$white;
         &:visited{
@@ -257,12 +266,18 @@ ul{
         }
     }
     .grokhead{
-        width:20%;
+        img{
+        width:80px;
         margin: 0 auto;
+        margin-bottom:15px;
+        }
     }
     .social{
-        a{
+        text-align: center;
+        img{
+            width:40px;
             display:inline-block;
+            margin-bottom: 15px;
         }
     }
 
@@ -274,7 +289,7 @@ ul{
 /////////////////////////////////////////////////////
 /////////////////////////////////////////////////////
 
-@media screen and (min-width: 660px){
+@media screen and (min-width: 600px){
     .grok{
         div{
         width:58%;
@@ -297,12 +312,9 @@ ul{
             padding:40px;
         }
         div{
-            width: 54%;
+            width: 50%;
             float:left;
         }  
-    }
-    .speakers{
-
     }
     .special_performance{
         img{
@@ -311,24 +323,34 @@ ul{
             float:left;
         }
         div{
-            width:65%;
+            width:60%;
             float:left;
         }
     }
     .schedule{
-
+        h4{
+            width:45%;
+            float:left;
+        }
     }
     .itenerary{
+        border:double 6px $textgrey;
+        margin: 100px 0 100px 0;
         div{
             width: 29%;
             float:left;
             margin-left:2%;
+            border-right:1px solid $verylgrey;
+        }
+        div:last-child{
+            border:none;
         }
     }
     .sponsors{
+        margin-left: 4%;
         div{
-            width:47%;
-            float:left
+            width:45%;
+            float:left;
         }
         img{
             width: 80%;
@@ -345,6 +367,22 @@ ul{
             width:80%;
             max-width: 400px;
         }
+        .ums{
+            padding-top:75px;
+        }
+    }
+    .footer{
+        text-align:center;
+        ul{
+            display:block;
+            width:95%;
+            margin:0 auto;
+        }
+        li{
+            display:inline-block;
+            margin-left:2%;
+            text-align:center;
+        }
     }
 
 }
@@ -356,7 +394,7 @@ ul{
 /////////////////////////////////////////////////////
 /////////////////////////////////////////////////////
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 800px){
     .speakers{
         div{
         width:29%;
