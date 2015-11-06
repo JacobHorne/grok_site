@@ -5,38 +5,38 @@
 	//jquery ready function
 	$( function(){
 
-		var hasAnimatedIn = false;
-		var speakers = $( ".speakers img" );
-		var win = $( window );
-		var offset;
-		var top;
-		var height;
-
 		//downCount plugin init
 		$( '.countdown' ).downCount({
 			date : '05/11/2016 06:00:00',
 			offset : +10
 		} );
+ 
+/**********************************************************/
 
+		var visibleStuff = $( ".visible" );
+		var win = $( window );
+		var offset;
+		var top;
+		var height;
 
-		speakers.css( "opacity", 0.05 );
+		visibleStuff.removeClass( "visible");
 
-		win.scroll( function() {
+		win.on( "scroll", function( e ){
 
-			offset = speakers.offset().top;
-			top    = win.scrollTop();
+			top = win.scrollTop();
 			height = win.height() / 2;
 
-		    if ( top >= offset - height && hasAnimatedIn === false ){
+			visibleStuff.each( function( i, o ){
 
-		    	console.log("hello");
-		    	hasAnimatedIn = true;
-		        speakers.animate( { "opacity" : 1 }, 1100 );
-		       	//$(speakers).addClass(".fadein");
+				var $o = $( o );
 
-		    }
+				offset = $o.offset().top;
+
+				if ( top >= offset - height && $o.hasClass( "visible" ) === false ){
+
+			       	$o.addClass( "visible" );
+			    }
+			});
 		});
-
 	});
-
 })( window, undefined );

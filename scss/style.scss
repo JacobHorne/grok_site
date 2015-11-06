@@ -1,5 +1,6 @@
-
-$hotgreen:#15da1a;
+//Colors///////////////////////////////////////
+//////////////////////////////////////////////
+$hotgreen:#6ef464;
 $purple:#5b3d97;
 $darkerpurple:#543b85;
 $violet:#a82e9b;
@@ -9,6 +10,9 @@ $lgrey:#636060;
 $verylgrey:#e8e8e8;
 $white:#eae9ec;
 
+
+//Timer///////////////////////////////////////
+//////////////////////////////////////////////
 ul.countdown {
 list-style: none;
 margin: 30px 0;
@@ -20,9 +24,10 @@ ul.countdown li {
 display: inline-block;
 }
 ul.countdown li span {
-font-size: 1.4em;
+font-size: 3em;
 font-weight: 600;
 line-height: 30px;
+font-family:"Helvetica";
 }
 ul.countdown li.seperator {
 font-size: 30px;
@@ -30,7 +35,7 @@ line-height: 30px;
 vertical-align: top;
 }
 ul.countdown li p {
-color: $white;
+color: transparent;
 font-size: 1em;
 font-family: "Open Sans";
 }
@@ -71,6 +76,14 @@ ul{
     padding:0;
     margin: 0;
 }
+
+.wrapper{
+    width:90%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 30px 30px 30px 30px;
+}
+
 /***** CLEARFIX is applied to the parent of floated elements *************/
 /*************************************************************************/
 
@@ -85,7 +98,7 @@ ul{
     }
 }
 
-/***** SITE STYLES *************/
+/***** SITE STYLES ****************/
 /**********************************/
 .main_header{
 	background-image: url("../img/nightsky.jpg");
@@ -105,9 +118,9 @@ ul{
     }
     h2{
         text-align: center;
-        font-weight: 300;
+        font-weight: 500;
         font-size: 1em;
-        margin-bottom: 10px;
+        margin: 20px 0 20px 0;
     }
     a{
         display:block;
@@ -115,14 +128,14 @@ ul{
         color:$hotgreen;
         font-size:1em;
         margin:0 auto; 
-        width: 220px;      
+        width: 200px;      
     }
-
 }
 
 .button{
-    border: 5px solid $hotgreen;
-    padding:5px; 
+    border: 7px solid $hotgreen;
+    padding:7px; 
+    border-radius:4px;
     text-align: center;
     &:hover{
             color:$white;
@@ -132,27 +145,29 @@ ul{
 }
 
 .grok{
-    padding:20px;
+    opacity:0.2;
     img{
         display:none;
-    }
-    h1{
-        padding-top: 20px;
     }
 }
 
 .ten_twenty{
-    padding:20px;
+    opacity:0.2;
     background-color:$purple;
     color:$white;
     img{
         display:none;
     }
+    p{
+        padding:10px;
+        background-color:$darkerpurple;
+        border-radius:10px;
+    }
 }
 
 .speakers{
-    margin:20px 0 20px 0px;
-    padding:20px;
+    opacity:0.2;
+    margin:30px;
     img{
         width:50%;
         max-width: 250px;
@@ -169,7 +184,7 @@ ul{
     }
 }
 .special_performance{
-    padding:30px 20px 30px 20px;
+    opacity:0.2;
     color:$white;
     background-color:$violet; 
     img{
@@ -182,11 +197,15 @@ ul{
     h4{
         margin-bottom: 10px;
     }
+    article{
+        padding:20px;
+        background-color:$darkerviolet;
+        border-radius:10px;
+    }
 }
 
 .schedule{
-    margin-top: 20px;
-    padding:20px;
+    opacity:0.2;
     h1{
         padding-bottom:10px;
     }
@@ -210,23 +229,41 @@ ul{
 
 }
 .itenerary{
+    opacity:0.2;
     padding:20px;
     margin:50px 0 30px 0;
+    h5{
+        font-size: 1.4em;
+    }
     div{
         margin-bottom:30px;
         border-bottom:1px solid $verylgrey;
     }
-    div:last-child{
-        border:none;
+    div:first-child{
+        border-radius:10px;
     }
-
+    div:nth-child(2){
+        border-radius:10px;
+    }
+    div:last-child{ 
+        border:none;
+        border-radius:10px;
+    }
+    p{
+        background-color:$purple;
+        color:white;
+        border-radius:5px;
+        font-size: 1em;
+        opacity:.8;
+    }
 }
 .register{
+    opacity:0.2;
     padding:20px;
     background-image: url("../img/mars.png");
     background-size:cover;
     background-position: center center;
-    height:200px;
+    height:250px;
     color:$white;
     h1{
         text-align:center;
@@ -242,19 +279,26 @@ ul{
 }
 
 .sponsors{
+    opacity:0.2;
     padding:20px;
     img{
+        width:90%;
         padding:40px;
         max-width: 200px;
     }
+    a{
+        display: inline-block;
+    }
 }
 .presentation{
+    opacity:0.2;
     padding:20px;
     background-color:$textgrey;
     color:$white;
     img{
+        width:80%;
         padding:40px;
-        max-width: 200px;
+        max-width: 300px;
         margin:0 auto;
     }
 }
@@ -277,63 +321,66 @@ ul{
         width:80px;
         margin: 0 auto;
         margin-bottom:15px;
+        opacity:.7;
+        &:hover{
+        opacity:1;
+        }
     }
 }
     .social{
         text-align: center;
         img{
-            width:40px;
-            display:inline-block;
-            margin-bottom: 15px;
-        }
+        width:40px;
+        display:inline-block;
+        margin-bottom: 15px;
     }
-.fadein{
-    background:green;
 }
+
+.visible{
+    opacity:1;
+    transition: 2s ease all;
+}
+
 
 /////////////////////////////////////////////////////
 /////////////////////////////////////////////////////
 /////////////////////////////////////////////////////
+///////////////MEDIA QUERY @ 600/////////////////////
 /////////////////////////////////////////////////////
 /////////////////////////////////////////////////////
 /////////////////////////////////////////////////////
 
 @media screen and (min-width: 600px){
     .grok{
-        div{
-        width:58%;
-        float:left;
+        p{
+            width:65%;
         }
         img{
-        display:block;
-        max-width: 320px;
-        width:40%;
-        float:left;
-        margin:0 auto;
+            display:block;
+            width:35%;
+            float:right;
         }
     }
     .ten_twenty{
         img{
-            display:block;
-            width:45%;
-            max-width: 200px;
+            display: block;
+            width: 26%;
+            padding: 4% 4% 4% 0;
             float:left;
-            padding:40px;
         }
-        div{
-            width: 50%;
-            float:left;
-        }  
+        p{
+            width: 70%;
+            margin-left: 30%;
+        }
     }
     .special_performance{
         img{
             width:30%;
-            max-width: 280px;
             float:left;
         }
-        div{
-            width:60%;
-            float:left;
+        article, h3, h4{
+            width:65%;
+            margin-left: 35%;
         }
     }
     .schedule{
@@ -343,29 +390,23 @@ ul{
         }
     }
     .itenerary{
-        border:double 6px $textgrey;
-        margin: 100px 0 100px 0;
+        border:double 8px $purple;
+        margin: 50px 0 50px 0;
         div{
             width: 29%;
             float:left;
             margin-left:2%;
             border-right:1px solid $verylgrey;
             border-bottom:none;
+            padding:0 0px 0 20px;
+            margin:0;
         }
         div:last-child{
             border:none;
+
         }
     }
     .sponsors{
-        margin-left: 4%;
-        div{
-            width:45%;
-            float:left;
-        }
-        img{
-            width: 80%;
-            max-width: 250px;
-        }
     }
     .presentation{
         a{
@@ -374,11 +415,11 @@ ul{
             float:left
         }
         img{
-            width:80%;
-            max-width: 400px;
+            width:50%;
+            max-width: 350px;
         }
         .ums{
-            padding-top:75px;
+            padding-top:30px;
         }
     }
     .footer{
@@ -400,6 +441,7 @@ ul{
 /////////////////////////////////////////////////////
 /////////////////////////////////////////////////////
 /////////////////////////////////////////////////////
+///////////////MEDIA QUERY @ 800/////////////////////
 /////////////////////////////////////////////////////
 /////////////////////////////////////////////////////
 /////////////////////////////////////////////////////
@@ -415,6 +457,8 @@ ul{
             width:75%;
             max-width:260px;
         }
+    }
+    .sponsors{
     }
 }
 

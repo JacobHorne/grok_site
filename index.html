@@ -14,85 +14,94 @@
         <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Lora:400,400italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Keania+One' rel='stylesheet' type='text/css'>
     </head>
     <body>
 
         <section class="main_header">
+
             <img src="img/grokwithtext.png">
+
             <h1>An Event Like No Other</h1>
+
             <h2>Greenville, SC May 11th-13th</h2>
+
             <a href="#" class="button">REGISTER</a>
         <!--Timer -->
             <ul class="countdown">
-            <li> <span class="days">00</span>
-            <p class="days_ref">days</p>
-            </li>
+                <li> 
+                    <span class="days">00</span>
+                    <p class="days_ref"></p>
+                </li>
             <li class="seperator">:</li>
             <li> <span class="hours">00</span>
-            <p class="hours_ref">hours</p>
+            <p class="hours_ref"></p>
             </li>
             <li class="seperator">:</li>
             <li> <span class="minutes">00</span>
-            <p class="minutes_ref">minutes</p>
+            <p class="minutes_ref"></p>
             </li>
             <li class="seperator">:</li>
             <li> <span class="seconds">00</span>
-            <p class="seconds_ref">seconds</p>
+            <p class="seconds_ref"></p>
             </li>
             </ul>
-
         </section>
 
-        <section class = "grok clearfix">
-            <h1>what is grok?</h1>
-            <div>
-                <p>GROK is gathering of creative pteople who want to connect with their peers and discuss the most pressing issues of our da</p>
-                <p>It’s a call for everyone who is tired of events where passive attendees sit for hours at a time and listen to speakers on stage. GROK is an event for active learning and sharing and where every voice truly matters.</p>
-                <p>Instead of listening to speakers, GROK is built around group discussions called 10/20s.</p>
-            </div>
+        <section class = "grok clearfix visible">
+            <div class="wrapper">
                 <img src="img/astronaut.png" alt="a picture of an astronaut">
+                <h1>what is grok?</h1>            
+                <p>GROK is gathering of creative pteople who want to connect with their peers and discuss the most pressing issues of our day.
+                It’s a call for everyone who is tired of events where passive attendees sit for hours at a time and listen to speakers on stage. GROK is an event for active learning and sharing and where every voice truly matters.Instead of listening to speakers, GROK is built around group discussions called 10/20s.</p>
+            </div>
         </section>
 
-        <section class="ten_twenty clearfix">
-            <img src="img/brain.png" alt="a picture of a logo">
-            <div>
+        <section class="ten_twenty clearfix visible">
+            <div class="wrapper">
                 <h1>What are 10/20s?</h1>
+                
+                <img src="img/brain.png" alt="a picture of a logo">
+
                 <p>10/20s are mediated discussions between about a dozen participants. Any participant in a 10/20 can propose a topic for discussion. You can talk about software, your work environment, your personal challenges–anything that’s on your mind.</p>
+
                 <p>After 10 minutes of conversation, the session leader can choose to close the topic and ask for another. If the conversation is particularly interesting, the session leader can extend the clock for another 10 minutes, hence the name, “10/20s.”</p>
             </div>
         </section>
 
-        <section class="speakers clearfix">
-            <h1>Session Speakers</h1>
-            <div>
-                <img src="img/jenn.jpg" alt="a picture of Jenn Lukas">
-                <h3>Jenn Lukas</h3>
-                <h4>ind web designer</h4>
-                <article>Jenn Lukas is a multi-talented front-end consultant and freelancer devtteloper in Philadelphia and is the founder of Ladies in Tech. She writes for The Nerdary, is a columnist for .net magazine, and has contributed to The Pastry Box Project. She has spoken at a variety of conferences including dConstruct, An Event Apart, and CSS Dev Conference.
-                </article>
-            </div>
+        <section class="speakers clearfix visible">
+            <section class="wrapper">
+                <h1>Session Speakers</h1>
+                <div>
+                    <img src="img/jenn.jpg" alt="a picture of Jenn Lukas">
+                    <h3>Jenn Lukas</h3>
+                    <h4>ind web designer</h4>
+                    <article>Jenn Lukas is a multi-talented front-end consultant and freelancer devtteloper in Philadelphia and is the founder of Ladies in Tech. She writes for The Nerdary, is a columnist for .net magazine, and has contributed to The Pastry Box Project. She has spoken at a variety of conferences including dConstruct, An Event Apart, and CSS Dev Conference.
+                    </article>
+                </div>
 
-            <div>
-                <img src="img/paul.jpg" alt="a picture of Jenn Lukas">
-                <h3>dr. paul roof</h3>
-                <h4>holy city beard &amp Moustach society</h4>
-                <article>Paul Roof is an Associate Professor of Sociology at Charleston Southern University and specializes in urban studies and popular culture. In 2007, while teaching at the College of Charleston, Paul founded the Holy City Beard & Moustache Society.  His beard has been featured on Buzzfeed, GQ Magazine, UK Telegraph, Reader’s Digest and Ripley’s Believe It or Not!
-                </article>
-            </div>
+                <div>
+                    <img src="img/paul.jpg" alt="a picture of Jenn Lukas">
+                    <h3>dr. paul roof</h3>
+                    <h4>holy city beard &amp Moustach society</h4>
+                    <article>Paul Roof is an Associate Professor of Sociology at Charleston Southern University and specializes in urban studies and popular culture. In 2007, while teaching at the College of Charleston, Paul founded the Holy City Beard & Moustache Society.  His beard has been featured on Buzzfeed, GQ Magazine, UK Telegraph, Reader’s Digest and Ripley’s Believe It or Not!
+                    </article>
+                </div>
 
-            <div>
-                <img src="img/aaron.jpg" alt="a picture of Jenn Lukas">
-                <h3>aaron draplin</h3>
-                <h4>draplin design</h4>
-                <article>Raised in the Michigan Northwoods, schooled at the Minneapolis College of Art and Design, and currently hunkered down in the mighty Pacific Northwest, the Draplin Design Co. proudly rolls up its sleeves on a number of projects related to the Print, Identity, Web Development, Illustration and Gocco Muscle categories.
-                </article>
-            </div>
+                <div>
+                    <img src="img/aaron.jpg" alt="a picture of Jenn Lukas">
+                    <h3>aaron draplin</h3>
+                    <h4>draplin design</h4>
+                    <article>Raised in the Michigan Northwoods, schooled at the Minneapolis College of Art and Design, and currently hunkered down in the mighty Pacific Northwest, the Draplin Design Co. proudly rolls up its sleeves on a number of projects related to the Print, Identity, Web Development, Illustration and Gocco Muscle categories.
+                    </article>
+                </div>
+            </section>
         </section>
 
-        <section class="special_performance clearfix">
+        <section class="special_performance clearfix visible">
+            <div class="wrapper">
             <h1>Special Performace</h1>
             <img src="img/moldover.jpg" alt="a picture of the musician moldover">
-            <div>
                 <h3>Moldover</h3>
                 <h4>Muscian</h4>
                 <article>If technology and music are your life, brace yourself- MOLDOVER is about to reformat your soul. Hailed by over 1,000,000 YouTube viewers as "The Godfather of Controllerism", Moldover is a new breed of music icon. Combining the charisma of a rock star, the mad genius of a basement inventor, and the radical inclusiveness of the DIY internet generation, Moldover is "literally throwing away the rule book and reinventing the wheel" (Remix Magazine). Witness his balls-to-the-wall LIVE SHOW at a club, experience one of his JAMBOX multiplayer instruments at a festival, or pick up and play the "LIGHT THEREMIN" packaging of his debut album and understand why the next paradigm for music is a one-man-brand called Moldover.
@@ -100,90 +109,94 @@
             </div>
         </section>
 
-        <section class="schedule">
-            <h1>Schedule</h1>
-            <h3>Three jam-packed days of fun with designers, developers, thinkers, good conversation and beer! GROK takes place at the Huguenot Mill and at The Iron Yard's HQ both in Downtown Greenville.</h3>
-            <h2>Locations:</h2>
-            <h4>Huguenot Mill
-            W Broad St
-            Greenville, SC 29601
-            Directions</h4>
-            <h4>Bank of America Building
-            Main Street
-            Greenville, SC 29601
-            Directions</h4>
+        <section class="schedule visible">
+            <div class="wrapper">
+                <h1>Schedule</h1>
+                <h3>Three jam-packed days of fun with designers, developers, thinkers, good conversation and beer! GROK takes place at the Huguenot Mill and at The Iron Yard's HQ both in Downtown Greenville.</h3>
+                <h2>Locations:</h2>
+                <h4>Huguenot Mill
+                W Broad St
+                Greenville, SC 29601
+                Directions</h4>
+                <h4>Bank of America Building
+                Main Street
+                Greenville, SC 29601
+                Directions</h4>
 
-            <section class="itenerary clearfix">
-                <div>
-                    <h5>Wednesday May 11th</h5>
-                    <p>@ THE IRON YARD HQ OPENING REMARKS The Iron Yard Crew</p>
-                    <p>10/20 Group Discussions</p>
-                    <p>10/20 Group Discussions</p>
-                    <p>lunch</p>
-                    <p>10/20 Group Discussions</p>
-                    <p>10/20 Group Discussions</p>
-                    <p>OPENING NIGHT MEETUP Location TBD</p>
-                </div>
-                <div>
-                    <h5>Thursday May 12th</h5>
-                    <p>@ HUGUENOT MILL MORNING KEYNOTE Carl Smith</p>
-                    <p>10/20 Group Discussions</p>
-                    <p>10/20 Group Discussions</p>
-                    <p>lunch</p>
-                    <p>10/20 Group Discussions</p>
-                    <p>10/20 Group Discussions</p>
-                    <p>OPENING NIGHT MEETUP Location TBD</p>
-                </div>
-                <div>
-                    <h5>Friday May 13th</h5>
-                    <p>@ HUGUENOT MILL MORNING KEYNOTE Aaron Draplin</p>
-                    <p>10/20 Group Discussions</p>
-                    <p>10/20 Group Discussions</p>
-                    <p>lunch</p>
-                    <p>10/20 Group Discussions</p>
-                    <p>10/20 Group Discussions</p>
-                    <p>OPENING NIGHT MEETUP Location TBD</p>
-                </div>
-            </section>
+                <section class="itenerary clearfix visible">
+                    <div>
+                        <h5>Wednesday May 11th</h5>
+                        <p>@ THE IRON YARD HQ OPENING REMARKS The Iron Yard Crew</p>
+                        <p>10/20 Group Discussions</p>
+                        <p>10/20 Group Discussions</p>
+                        <p>lunch</p>
+                        <p>10/20 Group Discussions</p>
+                        <p>10/20 Group Discussions</p>
+                        <p>OPENING NIGHT MEETUP Location TBD</p>
+                    </div>
+                    <div>
+                        <h5>Thursday May 12th</h5>
+                        <p>@ HUGUENOT MILL MORNING KEYNOTE Carl Smith</p>
+                        <p>10/20 Group Discussions</p>
+                        <p>10/20 Group Discussions</p>
+                        <p>lunch</p>
+                        <p>10/20 Group Discussions</p>
+                        <p>10/20 Group Discussions</p>
+                        <p>OPENING NIGHT MEETUP Location TBD</p>
+                    </div>
+                    <div>
+                        <h5>Friday May 13th</h5>
+                        <p>@ HUGUENOT MILL MORNING KEYNOTE Aaron Draplin</p>
+                        <p>10/20 Group Discussions</p>
+                        <p>10/20 Group Discussions</p>
+                        <p>lunch</p>
+                        <p>10/20 Group Discussions</p>
+                        <p>10/20 Group Discussions</p>
+                        <p>OPENING NIGHT MEETUP Location TBD</p>
+                    </div>
+                </section>
+            </div> <!--wrapper-->
         </section>
 
-        <section class="register">   
-            <h1>Dont be a stanger in a stange land</h1>
-            <a href="#" class="button">REGISTER</a>
+        <section class="register visible">
+            <div class="wrapper">   
+                <h1>Dont be a stanger in a stange land</h1>
+                <a href="#" class="button">REGISTER</a>
+            </div>
         </section>
 
-        <section class="sponsors clearfix">
-            <h1>Sponsors:</h1>
-            <div>
+        <section class="sponsors clearfix visible">
+            <div class="wrapper">
+                <h1>Sponsors:</h1>
                 <a href="img/shopify.com"><img src="img/shopify.png"></a>
                 <a href="img/mailchimp.com"><img src="img/mailchimp.png"></a>
-            </div>
-
-            <div>
                 <a href="img/github.com"><img src="img/github.png"></a>
-                <a href="img/girlscode.com"><img src="img/girlscode.png"></a>
             </div>
         </section>
 
-        <section class="presentation clearfix">
-            <h1>A presentation of:</h1>
-            <a href="unmatchedstyle.com" class="ums"><img src="img/ums.png" alt="unmatched style logo">
-            <a href="theironyard.com"><img src="img/iy.png" alt="theironyard logo style logo">
+        <section class="presentation clearfix visible">
+            <div class="wrapper">
+                <h1>A presentation of:</h1>
+                <a href="unmatchedstyle.com" class="ums"><img src="img/ums.png" alt="unmatched style logo">
+                <a href="theironyard.com"><img src="img/iy.png" alt="theironyard logo style logo">
+            </div>
         </section>
 
         <section class="footer">
-            <a href="index.html" class="grokhead"><img src="img/grokhead.png" alt="grok logo">
-            
-            <div class="social">
-                <a href="twitter.com"><img src="img/twitter.png" alt="twitter logo">
-                <a href="facebook.com"><img src="img/facebook.png" alt="facebook logo">
-            </div>
-            <ul>
-                <li><a href="#">Copyright 2015 GROK</a></li>
-                <li><a href="#">Terms and Services</a></li>
-                <li><a href="#">Volunteer</a></li>
-                <li><a href="#">info@unmatchedstyle.com</a></li>
-            </ul>
+            <div class="wrapper">
+                <a href="index.html" class="grokhead"><img src="img/grokhead.png" alt="grok logo">
+                
+                <div class="social">
+                    <a href="twitter.com"><img src="img/twitter.png" alt="twitter logo">
+                    <a href="facebook.com"><img src="img/facebook.png" alt="facebook logo">
+                </div>
+                <ul>
+                    <li><a href="#">Copyright 2015 GROK</a></li>
+                    <li><a href="#">Terms and Services</a></li>
+                    <li><a href="#">Volunteer</a></li>
+                    <li><a href="#">info@unmatchedstyle.com</a></li>
+                </ul>
+            <div class="wrapper">
         </section>
         <!-- CONTENT FOR WEBSITE -->
         
