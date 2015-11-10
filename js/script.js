@@ -5,6 +5,17 @@
 	//jquery ready function
 	$( function(){
 
+
+		//window resize
+		var theWindowHeight = $(window).height();
+		
+
+	    $( window ).resize(function(e) {
+	    	console.log(theWindowHeight);
+  			$( ".main_header" ).css({"height" : "theWindowHeight" + "px"});
+		});
+
+
 		//downCount plugin init
 		$( '.countdown' ).downCount({
 			date : '05/11/2016 06:00:00',
@@ -24,7 +35,7 @@
 		win.on( "scroll", function( e ){
 
 			top = win.scrollTop();
-			height = win.height() / 2;
+			height = win.height() / 1.4;
 
 			visibleStuff.each( function( i, o ){
 

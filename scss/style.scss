@@ -1,5 +1,7 @@
-//Colors///////////////////////////////////////
-//////////////////////////////////////////////
+@import "compass";
+
+/*Colors///////////////////////////////////////
+/////////////////////////////////////////////*/
 $hotgreen:#6ef464;
 $purple:#5b3d97;
 $darkerpurple:#543b85;
@@ -11,26 +13,27 @@ $verylgrey:#e8e8e8;
 $white:#eae9ec;
 
 
-//Timer///////////////////////////////////////
-//////////////////////////////////////////////
+/*Timer///////////////////////////////////////
+////////////////////////////////////////////*/
 ul.countdown {
 list-style: none;
-margin: 30px 0;
-padding: 0;
+margin: 100px 0;
+padding: 0px;
 display: block;
 text-align: center;
+opacity:.5;
 }
 ul.countdown li {
 display: inline-block;
 }
 ul.countdown li span {
 font-size: 3em;
-font-weight: 600;
+font-weight: 300;
 line-height: 30px;
-font-family:"Helvetica";
+font-family: "Monoton";
 }
 ul.countdown li.seperator {
-font-size: 30px;
+font-size: 3em;
 line-height: 30px;
 vertical-align: top;
 }
@@ -39,6 +42,7 @@ color: transparent;
 font-size: 1em;
 font-family: "Open Sans";
 }
+
 
 body{
     font-family: "Open Sans", sans-serif;
@@ -57,10 +61,10 @@ p{
     line-height: 1.6em;
 }
 article{
+    display:block;
     font-family: "Lora" serif;
     font-size: .9em;
     line-height: 1.6em;
-    font-style: italic;
 
 }
 img{
@@ -81,12 +85,14 @@ ul{
     width:90%;
     margin: 0 auto;
     max-width: 1000px;
-    padding: 30px 30px 30px 30px;
+    padding:40px 0 40px 0;
+}
+.darken{
+    
 }
 
-/***** CLEARFIX is applied to the parent of floated elements *************/
-/*************************************************************************/
-
+/*Timer///////////////////////////////////////
+////////////////////////////////////////////*/
 .clearfix {
     zoom: 1;
     &:before, &:after {
@@ -100,26 +106,34 @@ ul{
 
 /***** SITE STYLES ****************/
 /**********************************/
+
 .main_header{
-	background-image: url("../img/nightsky.jpg");
-	background-size:cover;
-	background-position: center center;
-	height:800px;
+	background-image: url("../img/nightskyedit.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color:$white;
+    background-size: cover;
+    padding-bottom:100px;
+    height: 100%;
     img{
-        padding-top:100px;
+        width:50%;
+        max-width: 250px;
+        padding-top:40px;
         margin: 0 auto;
     }
     h1{
         text-transform: none;
         text-align: center;
         font-size: 2em;
-        font-weight: 700;  
+        font-weight: 300;  
+        padding-top:20px;
+        font-family: "Monoton";
     }
     h2{
         text-align: center;
         font-weight: 500;
-        font-size: 1em;
+        font-size: 1.5em;
         margin: 20px 0 20px 0;
     }
     a{
@@ -128,22 +142,23 @@ ul{
         color:$hotgreen;
         font-size:1em;
         margin:0 auto; 
-        width: 200px;      
+        width: 200px; 
+        margin-top: 40px;   
     }
 }
 
 .button{
     border: 7px solid $hotgreen;
     padding:7px; 
-    border-radius:4px;
+    border-radius:5px;
     text-align: center;
+    transition: 1s ease;
     &:hover{
-            color:$white;
-            background-color:$hotgreen;
-            transition: 0.3s ease;
+            color: black;
+            background-color: $hotgreen;
+            
         }
 }
-
 .grok{
     opacity:0.2;
     img{
@@ -159,7 +174,7 @@ ul{
         display:none;
     }
     p{
-        padding:10px;
+        padding:20px;
         background-color:$darkerpurple;
         border-radius:10px;
     }
@@ -167,20 +182,27 @@ ul{
 
 .speakers{
     opacity:0.2;
-    margin:30px;
+    h1{
+        padding-bottom: 20px;
+    }
     img{
         width:50%;
         max-width: 250px;
-        border-radius: 200px 200px 200px 200px;
+        @include border-radius (200px);
         border: 8px solid black;
-        margin:20px 0 20px 0px;
+        margin:0 auto;
     }
     h3{
         color:$purple;
+        padding-top: 10px;
     }
     h4{
         color:$violet;
         margin-bottom: 10px;
+    }
+    article{
+        font-style:italic;
+        padding-bottom:50px;
     }
 }
 .special_performance{
@@ -192,7 +214,7 @@ ul{
         max-width: 250px;
         border-radius: 200px 200px 200px 200px;
         border: 8px solid white;
-        margin:20px 20px 20px 0;
+        margin:0 auto;
     }
     h4{
         margin-bottom: 10px;
@@ -230,8 +252,8 @@ ul{
 }
 .itenerary{
     opacity:0.2;
-    padding:20px;
-    margin:50px 0 30px 0;
+    margin:100px 0 0px 0;
+    padding:50px;
     h5{
         font-size: 1.4em;
     }
@@ -239,36 +261,28 @@ ul{
         margin-bottom:30px;
         border-bottom:1px solid $verylgrey;
     }
-    div:first-child{
-        border-radius:10px;
-    }
-    div:nth-child(2){
-        border-radius:10px;
-    }
-    div:last-child{ 
+    :last-child{
         border:none;
-        border-radius:10px;
     }
     p{
-        background-color:$purple;
-        color:white;
+        color:$darkerviolet;
         border-radius:5px;
         font-size: 1em;
         opacity:.8;
     }
 }
 .register{
-    opacity:0.2;
-    padding:20px;
-    background-image: url("../img/mars.png");
-    background-size:cover;
-    background-position: center center;
-    height:250px;
+    background-image: url("../img/nightskyedit.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color:$white;
+    background-size: cover;
     h1{
         text-align:center;
         font-size: 1.8em;
         margin: 40px 0 20px 0;
+        text-shadow: 2px 2px $textgrey;
     }
     a{
         display:block;
@@ -300,6 +314,9 @@ ul{
         padding:40px;
         max-width: 300px;
         margin:0 auto;
+    }
+    h1{
+        font-size: 1.2em;
     }
 }
 .footer{
@@ -351,6 +368,37 @@ ul{
 /////////////////////////////////////////////////////
 
 @media screen and (min-width: 600px){
+    .countdown{
+    opacity:.5;
+    }
+    ul.countdown {
+    list-style: none;
+    margin: 100px 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+    }
+    ul.countdown li {
+    display: inline-block;
+    }
+    ul.countdown li span {
+    font-size: 4em;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: "Monoton";
+    }
+    ul.countdown li.seperator {
+    font-size: 4em;
+    line-height: 30px;
+    vertical-align: top;
+    }
+    ul.countdown li p {
+    color: transparent;
+    font-size: 1em;
+    font-family: "Open Sans";
+    }
+
+
     .grok{
         p{
             width:65%;
@@ -374,12 +422,16 @@ ul{
         }
     }
     .special_performance{
-        img{
-            width:30%;
+        .moldover{
+            width:44%;
+            max-width: 192.8px;
+            padding:0;
             float:left;
         }
-        article, h3, h4{
-            width:65%;
+        img{
+            display:block;
+        }
+        article{
             margin-left: 35%;
         }
     }
@@ -391,15 +443,13 @@ ul{
     }
     .itenerary{
         border:double 8px $purple;
-        margin: 50px 0 50px 0;
         div{
             width: 29%;
             float:left;
             margin-left:2%;
-            border-right:1px solid $verylgrey;
             border-bottom:none;
             padding:0 0px 0 20px;
-            margin:0;
+            margin:0 auto;
         }
         div:last-child{
             border:none;
@@ -447,16 +497,54 @@ ul{
 /////////////////////////////////////////////////////
 
 @media screen and (min-width: 800px){
+    .countdown{
+    opacity:.5;
+    }
+    ul.countdown {
+    list-style: none;
+    margin: 100px 0 0 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+    }
+    ul.countdown li {
+    display: inline-block;
+    }
+    ul.countdown li span {
+    font-size: 6em;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: "Monoton";
+    }
+    ul.countdown li.seperator {
+    font-size: 6em;
+    line-height: 30px;
+    vertical-align: top;
+    }
+    ul.countdown li p {
+    color: transparent;
+    font-size: 1em;
+    font-family: "Open Sans";
+    }
+
+
     .speakers{
         div{
         width:29%;
         margin-left:3%;
         float:left;
         }
+        &:first-child{
+            margin:0;
+        }
         img{
             width:75%;
             max-width:260px;
+            margin:0;
         }
+    }
+    .register{
+        padding-bottom:50px;
     }
     .sponsors{
     }
