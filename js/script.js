@@ -6,24 +6,41 @@
 	$( function(){
 
 
-		//window resize
-		var theWindowHeight = $(window).height();
-		
 
-	    $( window ).resize(function(e) {
-	    	console.log(theWindowHeight);
-  			$( ".main_header" ).css({"height" : "theWindowHeight" + "px"});
-		});
-
-
-		//downCount plugin init
+		////////////////////////////////////////
+		//Time/////////////////////////////////
 		$( '.countdown' ).downCount({
 			date : '05/11/2016 06:00:00',
 			offset : +10
 		} );
- 
-/**********************************************************/
 
+
+		////////////////////////////////////////
+		//Text Resizer/////////////////////////
+		$("#countdown").fitText( 0.9 );
+
+
+
+
+
+		////////////////////////////////////////
+		//window resize/////////////////////////
+		var win    = $( window );
+		var header = $( ".main_header" );
+
+		var resize = function(){
+
+			header.css( { "height" : win.height() + "px"});
+		};
+
+	    win.on( "resize load", function( e ){
+
+	    	resize();
+		});
+		
+
+		////////////////////////////////////////
+		//Fade In//////////////////////////////
 		var visibleStuff = $( ".visible" );
 		var win = $( window );
 		var offset;

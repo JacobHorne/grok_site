@@ -15,31 +15,33 @@ $white:#eae9ec;
 
 /*Timer///////////////////////////////////////
 ////////////////////////////////////////////*/
+.countdown{
+    position:absolute;
+    bottom:0px;
+    left:0;
+    right:0;
+    padding:0;
+}
 ul.countdown {
 list-style: none;
-margin: 100px 0;
+margin: 0px 0;
 padding: 0px;
 display: block;
 text-align: center;
-opacity:.5;
 }
 ul.countdown li {
 display: inline-block;
 }
 ul.countdown li span {
-font-size: 3em;
-font-weight: 300;
-line-height: 30px;
 font-family: "Monoton";
+opacity:0.3;
 }
 ul.countdown li.seperator {
-font-size: 3em;
-line-height: 30px;
 vertical-align: top;
+opacity:0.3;
 }
 ul.countdown li p {
 color: transparent;
-font-size: 1em;
 font-family: "Open Sans";
 }
 
@@ -114,26 +116,26 @@ ul{
     background-attachment: fixed;
     color:$white;
     background-size: cover;
-    padding-bottom:100px;
-    height: 100%;
+    position:relative;
     img{
-        width:50%;
-        max-width: 250px;
-        padding-top:40px;
+        width:30%;
+        max-width: 175px;
+        padding-top:100px;
         margin: 0 auto;
     }
     h1{
         text-transform: none;
         text-align: center;
-        font-size: 2em;
+        font-size: 1.2em;
         font-weight: 300;  
         padding-top:20px;
         font-family: "Monoton";
+        letter-spacing: 7px;
     }
     h2{
         text-align: center;
         font-weight: 500;
-        font-size: 1.5em;
+        font-size: 1em;
         margin: 20px 0 20px 0;
     }
     a{
@@ -142,14 +144,14 @@ ul{
         color:$hotgreen;
         font-size:1em;
         margin:0 auto; 
-        width: 200px; 
-        margin-top: 40px;   
+        width: 120px; 
+        margin-top: 30px;   
     }
 }
 
 .button{
-    border: 7px solid $hotgreen;
-    padding:7px; 
+    border: 3px solid $hotgreen;
+    padding:5px 10px; 
     border-radius:5px;
     text-align: center;
     transition: 1s ease;
@@ -188,13 +190,17 @@ ul{
     img{
         width:50%;
         max-width: 250px;
-        @include border-radius (200px);
+        @include border-radius (50%);
         border: 8px solid black;
         margin:0 auto;
     }
     h3{
         color:$purple;
         padding-top: 10px;
+        font-family: "Monoton";
+        font-size: 1em;
+        font-weight: 300;
+        letter-spacing: 1px;
     }
     h4{
         color:$violet;
@@ -209,17 +215,20 @@ ul{
     opacity:0.2;
     color:$white;
     background-color:$violet; 
-    img{
-        width:50%;
-        max-width: 250px;
-        border-radius: 200px 200px 200px 200px;
-        border: 8px solid white;
-        margin:0 auto;
+    .moldover{
+        img{
+            width:50%;
+            max-width: 250px;
+            @include border-radius (50%);
+            border: 8px solid white;
+            margin:0 auto;
+            margin-top:10px;
+        }
+        h4{
+         margin-bottom: 10px;
+        }
     }
-    h4{
-        margin-bottom: 10px;
-    }
-    article{
+    p{
         padding:20px;
         background-color:$darkerviolet;
         border-radius:10px;
@@ -227,48 +236,56 @@ ul{
 }
 
 .schedule{
+    margin-bottom:30px;
     opacity:0.2;
     h1{
         padding-bottom:10px;
     }
     h2{
-        padding-bottom:10px;
+        margin:10px 0 20px 0;
     }
     h3{
         font-weight: 300;
         font-family: "Lora";
         text-transform: none;
         padding-bottom:10px;
+        font-size: 1em;
+        line-height: 1.5em;
     }
     h4{
         font-weight: 300;
         font-family: "Lora";
         text-transform: none;
+        margin:15px 0px;
+        line-height: 1.5em;
+        margin-right:2%;
     }
     h5{
         color:$violet;
     }
-
 }
 .itenerary{
     opacity:0.2;
-    margin:100px 0 0px 0;
-    padding:50px;
+    padding:20px;
+    margin:30px 0 0 0;
+    h4{
+        padding-bottom:50px;
+    }
     h5{
-        font-size: 1.4em;
+        font-size: .8em;
+        font-family: "Monoton";
+        letter-spacing: 2px;
+        font-weight: 300;
     }
     div{
         margin-bottom:30px;
-        border-bottom:1px solid $verylgrey;
-    }
-    :last-child{
-        border:none;
+        border:double 8px $purple;
+        padding:10px;
     }
     p{
-        color:$darkerviolet;
+        color:$darkerpurple;
         border-radius:5px;
-        font-size: 1em;
-        opacity:.8;
+        font-size: .8em;
     }
 }
 .register{
@@ -288,20 +305,21 @@ ul{
         display:block;
         margin:0 auto;
         color:$hotgreen;
-        width:200px;
+        width:120px;
     }
 }
 
 .sponsors{
+    padding-bottom:50px;
     opacity:0.2;
-    padding:20px;
-    img{
-        width:90%;
-        padding:40px;
-        max-width: 200px;
+    h1{
+        padding:30px;
     }
-    a{
-        display: inline-block;
+    img{
+        width:60%;
+        padding:25px;
+        max-width: 200px;
+        margin:0 auto;
     }
 }
 .presentation{
@@ -310,18 +328,17 @@ ul{
     background-color:$textgrey;
     color:$white;
     img{
-        width:80%;
+        width:50%;
         padding:40px;
         max-width: 300px;
         margin:0 auto;
     }
-    h1{
-        font-size: 1.2em;
-    }
 }
 .footer{
+    opacity:0.2;
     background-color:$lgrey;
     padding:20px;
+    text-align: center;
     a{
         color:$white;
         opacity:.8;
@@ -368,36 +385,6 @@ ul{
 /////////////////////////////////////////////////////
 
 @media screen and (min-width: 600px){
-    .countdown{
-    opacity:.5;
-    }
-    ul.countdown {
-    list-style: none;
-    margin: 100px 0;
-    padding: 0;
-    display: block;
-    text-align: center;
-    }
-    ul.countdown li {
-    display: inline-block;
-    }
-    ul.countdown li span {
-    font-size: 4em;
-    font-weight: 600;
-    line-height: 30px;
-    font-family: "Monoton";
-    }
-    ul.countdown li.seperator {
-    font-size: 4em;
-    line-height: 30px;
-    vertical-align: top;
-    }
-    ul.countdown li p {
-    color: transparent;
-    font-size: 1em;
-    font-family: "Open Sans";
-    }
-
 
     .grok{
         p{
@@ -417,25 +404,36 @@ ul{
             float:left;
         }
         p{
-            width: 70%;
+            width: 66%;
             margin-left: 30%;
         }
     }
     .special_performance{
         .moldover{
-            width:44%;
-            max-width: 192.8px;
-            padding:0;
+            padding-right: 7%;
+            width:30%;
             float:left;
+            img{
+                width:100%;
+                max-width: 250px;
+                margin:0px;
+                box-sizing: border-box;
+                margin-bottom: 10px;
+            }    
+            h3{
+                margin-left: 25%;
+            }
+            h4{
+                margin-left: 31%;
+            }
         }
-        img{
-            display:block;
-        }
-        article{
-            margin-left: 35%;
+        p{
+            float:left;
+            width:57%;
         }
     }
     .schedule{
+        margin-bottom: 50px;
         h4{
             width:45%;
             float:left;
@@ -446,17 +444,16 @@ ul{
         div{
             width: 29%;
             float:left;
-            margin-left:2%;
-            border-bottom:none;
-            padding:0 0px 0 20px;
             margin:0 auto;
-        }
-        div:last-child{
+            padding:0 10px;
             border:none;
-
         }
     }
     .sponsors{
+        img{
+            width: 25%;
+            float:left;
+        }
     }
     .presentation{
         a{
@@ -465,11 +462,11 @@ ul{
             float:left
         }
         img{
-            width:50%;
-            max-width: 350px;
+            width:80%;
+            max-width: 280px;
         }
         .ums{
-            padding-top:30px;
+            padding-top:50px;
         }
     }
     .footer{
@@ -497,36 +494,6 @@ ul{
 /////////////////////////////////////////////////////
 
 @media screen and (min-width: 800px){
-    .countdown{
-    opacity:.5;
-    }
-    ul.countdown {
-    list-style: none;
-    margin: 100px 0 0 0;
-    padding: 0;
-    display: block;
-    text-align: center;
-    }
-    ul.countdown li {
-    display: inline-block;
-    }
-    ul.countdown li span {
-    font-size: 6em;
-    font-weight: 600;
-    line-height: 30px;
-    font-family: "Monoton";
-    }
-    ul.countdown li.seperator {
-    font-size: 6em;
-    line-height: 30px;
-    vertical-align: top;
-    }
-    ul.countdown li p {
-    color: transparent;
-    font-size: 1em;
-    font-family: "Open Sans";
-    }
-
 
     .speakers{
         div{
@@ -545,6 +512,16 @@ ul{
     }
     .register{
         padding-bottom:50px;
+    }
+    .itenerary{
+        padding:40px;
+        h5{
+            font-size: 1.2em;
+        }
+        p{
+            font-size: 0.9em;
+        }
+    
     }
     .sponsors{
     }
